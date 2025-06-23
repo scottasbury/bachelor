@@ -6,33 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
-  font-family: sans-serif;
-  padding: 2em;
-  background: #eaf2f8;
-  color: #333;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: auto;
+      font-family: sans-serif;
+      padding: 2em;
+      background: #eaf2f8;
+      color: #333;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
     }
+
     h1 {
       color: #c0392b;
       font-size: 2em;
       margin-bottom: 0.5em;
     }
+
     h2 {
       color: #000;
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.3em;
       margin-top: 2em;
     }
+
+    h3 {
+      margin-top: 1.5em;
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+
     p, ul {
       margin: 0.5em 0;
     }
+
     ul {
       padding-left: 1.2em;
     }
+
     strong {
       color: #000;
+    }
+
+    /* Agenda schedule styling */
+    .schedule .event {
+      display: flex;
+      gap: 1em;
+      padding: 0.3em 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .schedule .time {
+      width: 90px;
+      font-weight: bold;
+      color: #34495e;
+    }
+
+    .schedule .desc {
+      flex: 1;
     }
   </style>
 </head>
@@ -61,34 +90,28 @@
   <p>Need anything? Shoot me a text.</p>
 
   <h2>Agenda</h2>
-  <p><strong>Thursday</strong></p>
-  <ul>
-    <li>Afternoon: Arrivals & getting settled</li>
-    <li>Evening: Dinner & chill at the house</li>
-  </ul>
+  <div class="schedule">
+    <h3>Thursday</h3>
+    <div class="event"><span class="time">Afternoon</span><span class="desc">Arrivals & getting settled</span></div>
+    <div class="event"><span class="time">Evening</span><span class="desc">Dinner & chill at the house</span></div>
 
-  <p><strong>Friday</strong></p>
-  <ul>
-    <li>Morning: Pool time & relaxing</li>
-    <li>Lunch: Disney Springs – Chef Art Smith’s Homecomin’</li>
-    <li>Afternoon: Shopping around Disney Springs</li>
-    <li>Evening: Dinner out (TBD)</li>
-    <li>Night: Poker night at the house (tentative)</li>
-  </ul>
+    <h3>Friday</h3>
+    <div class="event"><span class="time">Morning</span><span class="desc">Pool time & relaxing</span></div>
+    <div class="event"><span class="time">Lunch</span><span class="desc">Disney Springs – Chef Art Smith’s Homecomin’</span></div>
+    <div class="event"><span class="time">Afternoon</span><span class="desc">Shopping around Disney Springs</span></div>
+    <div class="event"><span class="time">Evening</span><span class="desc">Dinner out (TBD)</span></div>
+    <div class="event"><span class="time">Night</span><span class="desc">Poker night at the house (tentative)</span></div>
 
-  <p><strong>Saturday</strong></p>
-  <ul>
-    <li>Morning: Breakfast & head to ATV park</li>
-    <li>Lunch: Packed lunch during the ride</li>
-    <li>Afternoon: Return home, relax & recover</li>
-    <li>Evening: Catered BBQ dinner & mobile massage recovery session</li>
-  </ul>
+    <h3>Saturday</h3>
+    <div class="event"><span class="time">Morning</span><span class="desc">Breakfast & head to ATV park</span></div>
+    <div class="event"><span class="time">Lunch</span><span class="desc">Packed lunch during the ride</span></div>
+    <div class="event"><span class="time">Afternoon</span><span class="desc">Return home, relax & recover</span></div>
+    <div class="event"><span class="time">Evening</span><span class="desc">Catered BBQ dinner & mobile massage session</span></div>
 
-  <p><strong>Sunday</strong></p>
-  <ul>
-    <li>Morning: Check-out by 10 AM</li>
-    <li>Lunch: Optional for anyone sticking around</li>
-  </ul>
+    <h3>Sunday</h3>
+    <div class="event"><span class="time">Morning</span><span class="desc">Check-out by 10 AM</span></div>
+    <div class="event"><span class="time">Lunch</span><span class="desc">Optional lunch if you're still around</span></div>
+  </div>
 
   <h2>Maybes & Bonus Ideas</h2>
   <ul>
